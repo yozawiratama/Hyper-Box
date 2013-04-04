@@ -65,6 +65,22 @@
 	left: 12px;
 }
 
+.makeEmboss {
+    /* Border bottom light */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+ 
+    /* Inner top shadow */
+    -moz-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.makeRound{
+	/* Round corners */
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+}
 
 .hyperBox::-webkit-scrollbar {
     width: 12px;
