@@ -2,6 +2,12 @@
 /* Support this Development with your feedback  */
 /* Development : https://github.com/yozawiratama/Hyper-Box */
 
+html,body{
+	min-width: 100%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+}
 
 .hyperBox {
 	position: fixed;
@@ -13,7 +19,6 @@
 	background: rgba(46,42,42,0.81);
 	z-index: 99999;
 	opacity:0;
-	overflow: scroll;
 	-webkit-transition: opacity 270ms ease-in;
 	-moz-transition: opacity 270ms ease-in;
 	transition: opacity 270ms ease-in;
@@ -26,12 +31,33 @@
 }
 
 .hyperBox > div {
-	min-width: 600px; /*Change your own min-width of modal Dialog here*/
-	width: 45%;
+	width: 100%;
+	height: 50%;
 	position: relative;
 	margin: 10% auto;
 	padding: 5px 20px 40px 20px;
 	background: #fff;
+}
+
+.dialog-content{
+	width: 900px;
+	height: 100%;
+	margin: auto;
+	overflow: auto;
+}
+
+.dialog-content::-webkit-scrollbar {
+    width: 12px;
+}
+
+.dialog-content::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+
+.dialog-content::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
 }
 
 .toClose{
@@ -46,6 +72,7 @@
 .toClose:hover { 
 	color: gray;
 	font-weight: bolder;
+	
 }
 
 /* Default Position*/
