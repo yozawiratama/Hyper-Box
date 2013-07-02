@@ -32,18 +32,34 @@ html,body{
 
 .hyperBox > div {
 	width: 100%;
-	height: 50%;
+	height: 60%;
 	position: relative;
 	margin: 10% auto;
 	padding: 5px 20px 40px 20px;
 	background: #fff;
 }
 
+.dialog-header {
+	width: 900px;
+	height: 25px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.dialog-footer {
+	width: 900px;
+	height: 25px;
+	margin-left: auto;
+	margin-right: auto;
+}
 .dialog-content{
 	width: 900px;
-	height: 100%;
-	margin: auto;
+	height: 80%;
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
 	overflow: auto;
+	padding-bottom: 10px;
 }
 
 .dialog-content::-webkit-scrollbar {
@@ -67,6 +83,7 @@ html,body{
 	text-align: right;
 	text-decoration: none;
 	font-weight: lighter;
+	margin-top: 15px;
 }
 
 .toClose:hover { 
@@ -92,7 +109,7 @@ html,body{
 	left: 12px;
 }
 
-.makeEmboss {
+.make-emboss {
     /* Border bottom light */
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
  
@@ -102,23 +119,9 @@ html,body{
     box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.1);
 }
 
-.makeRound{
+.make-round{
 	/* Round corners */
     -webkit-border-radius: 7px;
     -moz-border-radius: 7px;
     border-radius: 7px;
-}
-
-.hyperBox::-webkit-scrollbar {
-    width: 12px;
-}
-
-.hyperBox::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
-    border-radius: 10px;
-}
-
-.hyperBox::-webkit-scrollbar-thumb {
-    border-radius: 10px;
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
 }
